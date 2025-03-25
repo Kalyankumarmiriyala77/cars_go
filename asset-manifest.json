@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cars_go/static/css/main.905a282f.css",
+    "main.js": "/cars_go/static/js/main.e11107b0.js",
+    "static/js/453.8ab44547.chunk.js": "/cars_go/static/js/453.8ab44547.chunk.js",
+    "index.html": "/cars_go/index.html",
+    "main.905a282f.css.map": "/cars_go/static/css/main.905a282f.css.map",
+    "main.e11107b0.js.map": "/cars_go/static/js/main.e11107b0.js.map",
+    "453.8ab44547.chunk.js.map": "/cars_go/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.905a282f.css",
+    "static/js/main.e11107b0.js"
+  ]
+}
