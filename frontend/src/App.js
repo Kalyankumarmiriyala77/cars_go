@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { Routes, Route, HashRouter} from 'react-router-dom';
+import { HashRouter, Routes, Route} from 'react-router-dom';
 import IndexPage from './components/IndexPage';
 import Login from "./components/Login";
 import Register from "./components/Register";
