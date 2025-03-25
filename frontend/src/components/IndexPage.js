@@ -7,17 +7,17 @@ import styles from './Indexpage.module.css'; // Ensure correct file name
 // Array of car images with captions
 const carSlides = [
   {
-    image: '/images/car2.avif',
+    image: `${process.env.PUBLIC_URL}/images/car2.avif`,
     title: 'Luxury Cars',
     description: 'Drive the best luxury cars at affordable prices.',
   },
   {
-    image: '/images/car2.avif',
+    image: `${process.env.PUBLIC_URL}/images/car2.avif`,
     title: 'SUV Collection',
     description: 'Spacious SUVs for family and adventure trips.',
   },
   {
-    image: '/images/car1.png',
+    image: `${process.env.PUBLIC_URL}/images/car1.png`,
     title: 'Economy Cars',
     description: 'Budget-friendly cars for daily use.',
   },
