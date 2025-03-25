@@ -8,14 +8,12 @@ import UserDashboard from "./components/UserDashboard";
 
 const App = () => {
   return (
-    <BrowserRouter>
     <Routes>
       <Route path="/" element={<IndexPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<UserDashboard />} />
     </Routes> 
-    </BrowserRouter>
   );
 };
 
