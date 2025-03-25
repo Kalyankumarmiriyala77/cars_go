@@ -1,0 +1,88 @@
+/* Login.css - Scoped for Login Component */
+
+/* Login Page Container */
+.login-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  background: #f9f9f9; /* Light background */
+}
+
+/* Login Form */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  color: #333333;
+  font-size: 2rem;
+}
+
+/* Input Fields */
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Submit Button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Link */
+.login-form p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-form a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 1.5rem;
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 0.9rem;
+  }
+}

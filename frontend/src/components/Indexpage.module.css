@@ -1,0 +1,158 @@
+/* IndexPage.module.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+/* Container */
+.indexContainer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgb(120, 173, 50);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: rgb(37, 106, 141);
+}
+
+/* Menu Toggle Button (Hamburger Menu) */
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Slideshow Styling */
+.slideshowContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slidesWrapper {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+}
+
+.slideContent {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #f39c12;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(120, 173, 50);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block; /* Show hamburger on small screens */
+  }
+
+  .navLinks {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #444;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navLinksOpen {
+    transform: translateX(0);
+  }
+
+  .slideContent {
+    bottom: 10%;
+    left: 5%;
+  }
+
+  .slideContent h2 {
+    font-size: 1.5rem;
+  }
+
+  .slideContent p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideContent h2 {
+    font-size: 1.2rem;
+  }
+
+  .slideContent p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}

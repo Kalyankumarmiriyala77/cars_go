@@ -1,0 +1,114 @@
+/* Dashboard Container */
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #1e3a8a;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Menu Button (for mobile)*/ 
+  
+  /*Profile Icon */
+  .profileButton {
+    font-size: 1.7rem;
+    color :rgb(247, 247, 252);
+    background: #1e3a8a;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    border: none;
+  }
+  
+  
+  /* Dropdown Menu */
+  .dropdownMenu {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    color: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 10;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .dropdownMenu li {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    list-style-type: none;
+  }
+  
+  .dropdownMenu li:hover {
+    background: #adb0b4
+  }
+  
+  .logoutOption {
+    color: #ef4444;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menuButton {
+      display: block;
+    }
+  
+    .dropdownMenu {
+      position: absolute;
+      box-shadow: none;
+    }
+  
+    .navbar {
+      flex-direction: row;
+      gap: 1rem;
+      text-align: center;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0.75rem 1rem;
+    }
+  
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .dropdownMenu li {
+      padding: 0.5rem 1rem;
+    }
+  }
+  
