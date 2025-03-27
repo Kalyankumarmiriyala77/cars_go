@@ -1,5 +1,3 @@
-package com.myp.cars_go;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -14,19 +12,9 @@ public class WebConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        
-        // Allow frontend origin
-        configuration.setAllowedOrigins(List.of("http://localhost:3000")); 
-        
-        // Allow all HTTP methods
-        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        
-        // Allow all headers
-        configuration.setAllowedHeaders(List.of("*"));
-        
-        // Allow session sharing (important for cookies)
-        configuration.setAllowCredentials(true); 
-        
+        configuration.setAllowedOrigins(List.of("https://your-frontend-url.com"));
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
+        configuration.setAllowedHeaders(List.of("Content-Type", "Authorization"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
